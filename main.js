@@ -32,7 +32,7 @@ function init() {
 
 function drawBox(x, y, z, boxColor) {
     var geometry = new THREE.BoxGeometry( x, y, z );
-    var material = new THREE.MeshBasicMaterial( {color: boxColor} );
+    var material = new THREE.MeshBasicMaterial( {color: boxColor, emissive: boxColor, side: THREE.DoubleSide, flatShading: true} );
     mesh = new THREE.Mesh( geometry, material );
     return mesh;
 }
