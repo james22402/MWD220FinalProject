@@ -60,7 +60,7 @@ function data() {
         items.sort(function(first, second) {
             return second[1] - first[1];
         });
-
+        console.log(items);
         var colors = [0xe6194b, 0x3cb44b, 0xffe119, 0x4363d8, 0xf58231, 0x911eb4, 0x46f0f0, 0xf032e6, 0xbcf60c, 0xfabebe, 0x008080, 0xe6beff, 0x9a6324, 0xfffac8, 0x800000, 0xaaffc3, 0x808000, 0xffd8b1, 0x000075, 0x808080];
         createTreeMap(0, true, emptyWidth, emptyHeight, trpx, trpy, blpx, blpy, colors, sum);
     });
